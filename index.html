@@ -1,122 +1,28 @@
-<!doctype html>
-<html lang="pt-br">
-
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Pokedex</title>
-
+    <title>Pokédex</title>
     <link rel="stylesheet" href="style.css">
-
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-        crossorigin="anonymous"
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-        rel="stylesheet"
-    >
 </head>
-
-
 <body>
 
+    <h1>Pokédex</h1>
 
-    <div class="pokebolas-fundo">
-
-        <div class="pokebola pokebola-1"></div>
-
-        <div class="pokebola pokebola-2"></div>
-
-        <div class="pokebola pokebola-3"></div>
-
-        <div class="pokebola pokebola-4"></div>
-
+    <div class="busca">
+        <input type="text" id="campoBusca" placeholder="Nome ou ID">
+        <button id="btnBuscar">Buscar</button>
     </div>
 
+    <div class="botoes">
+        <button id="btnAnterior">Anterior</button>
+        <button id="btnAleatorio">Aleatório</button>
+        <button id="btnProximo">Próximo</button>
+    </div>
 
     <div id="resultado"></div>
 
-
-    <div class="controles">
-
-        <div class="botoes">
-
-            <button
-                id="btnBuscar"
-                class="btn btn-primary rounded-pill px-4"
-            >
-                🔍 Buscar
-            </button>
-
-
-            <button
-                id="btnAnterior"
-                class="btn btn-outline-secondary rounded-pill"
-            >
-                ← Anterior
-            </button>
-
-
-            <button
-                id="btnProximo"
-                class="btn btn-outline-primary rounded-pill"
-            >
-                Próximo →
-            </button>
-
-
-            <button
-                id="btnAleatorio"
-                class="btn btn-warning rounded-pill"
-            >
-                🎲 Aleatório
-            </button>
-
-        </div>
-
-
-        <input
-            type="text"
-            id="campoBusca"
-            placeholder="id ou nome"
-        >
-
-    </div>
-
-
-
     <script src="script.js"></script>
-
-
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"
-    ></script>
-
-
-    <style>
-
-        .btn {
-            transition: all 0.1s ease;
-        }
-
-
-        .btn:active {
-            transform: translateY(3px);
-
-            box-shadow:
-                0 1px 2px rgba(0, 0, 0, 0.2) !important;
-        }
-
-    </style>
-
 </body>
-
 </html>
-
